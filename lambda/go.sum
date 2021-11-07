@@ -60,6 +60,8 @@ github.com/aws/aws-sdk-go v1.38.51/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2z
 github.com/aws/aws-sdk-go v1.38.64/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.41.2 h1:jiWC3Wq5tmSUY6XWZxkqMXE7WDQ22m7eECQi0xufQ30=
 github.com/aws/aws-sdk-go v1.41.2/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
+github.com/aws/aws-sdk-go v1.41.19 h1:9QR2WTNj5bFdrNjRY9SeoG+3hwQmKXGX16851vdh+N8=
+github.com/aws/aws-sdk-go v1.41.19/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
@@ -358,6 +360,8 @@ github.com/tommzn/hdb-datasource-core v1.2.0 h1:WYnY5FhPGvnFlZg7ngeIaBKOoKQS8gZb
 github.com/tommzn/hdb-datasource-core v1.2.0/go.mod h1:K+7tS/YITSjgLxNOsGpVW3DB7WS1rJK2u6vW6taICeQ=
 github.com/tommzn/hdb-datasource-core v1.2.1 h1:Mo21VCaBCvcic9WqfaWL0Ht0MtFpNChjlZOmocCDMKs=
 github.com/tommzn/hdb-datasource-core v1.2.1/go.mod h1:K+7tS/YITSjgLxNOsGpVW3DB7WS1rJK2u6vW6taICeQ=
+github.com/tommzn/hdb-datasource-core v1.2.2 h1:N9WuSIKJwXhYq3wvW2QJv4bktgsiKWLoWyx0tYS2SyY=
+github.com/tommzn/hdb-datasource-core v1.2.2/go.mod h1:K+7tS/YITSjgLxNOsGpVW3DB7WS1rJK2u6vW6taICeQ=
 github.com/tommzn/hdb-events-go v1.0.6/go.mod h1:Pi0wRugUxNO81wqM4lFoie1C6oE8zUbq4h4TjSgvBi4=
 github.com/tommzn/hdb-events-go v1.0.8 h1:v1j1+a5+J+Wd8QZIfqvquSPiyGX1AMPIA7hwFwoul7o=
 github.com/tommzn/hdb-events-go v1.0.8/go.mod h1:Pi0wRugUxNO81wqM4lFoie1C6oE8zUbq4h4TjSgvBi4=
@@ -561,6 +565,8 @@ golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20211013075003-97ac67df715c h1:taxlMj0D/1sOAuv/CbSD+MMDof2vbyPTqz5FNYKpXt8=
 golang.org/x/sys v0.0.0-20211013075003-97ac67df715c/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20211107104306-e0b2ad06fe42 h1:G2DDmludOQZoWbpCr7OKDxnl478ZBGMcOhrv+ooX/Q4=
+golang.org/x/sys v0.0.0-20211107104306-e0b2ad06fe42/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
