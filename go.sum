@@ -61,6 +61,8 @@ github.com/aws/aws-sdk-go v1.38.51/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2z
 github.com/aws/aws-sdk-go v1.38.64/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.41.2 h1:jiWC3Wq5tmSUY6XWZxkqMXE7WDQ22m7eECQi0xufQ30=
 github.com/aws/aws-sdk-go v1.41.2/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
+github.com/aws/aws-sdk-go v1.41.19 h1:9QR2WTNj5bFdrNjRY9SeoG+3hwQmKXGX16851vdh+N8=
+github.com/aws/aws-sdk-go v1.41.19/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
@@ -358,12 +360,18 @@ github.com/tommzn/go-config v1.0.5 h1:fhXq5rVvONUKDq/zmFvHWq2r/1CjaQ9WsYiHyOnvaD
 github.com/tommzn/go-config v1.0.5/go.mod h1:K+ta7gkX32lSS+6tIIH9ttuhr35tV4AMAzOC640aRKE=
 github.com/tommzn/go-log v1.0.2 h1:soEGqiHstXOB1zVu5360NmlN4KfRg49zvQwztuvTPvo=
 github.com/tommzn/go-log v1.0.2/go.mod h1:xB+EJtRRPcR+4oeenhSvKKeNq4Mqr2GjHEz1lJtYDZo=
+github.com/tommzn/go-log v1.1.0 h1:x4UQPH7sQznhWfz34WC8JKyFjkYmZT8ZHrcv+nfyI1c=
+github.com/tommzn/go-log v1.1.0/go.mod h1:xB+EJtRRPcR+4oeenhSvKKeNq4Mqr2GjHEz1lJtYDZo=
 github.com/tommzn/go-secrets v1.0.0 h1:TVDf0ky3gRX2QDCCPDXsyLdxQ/6gBxCSxbzgpv6Q0I0=
 github.com/tommzn/go-secrets v1.0.0/go.mod h1:ZCiO/36WGUEgk5K7+S3U/JKIp4ghe5OA2fkckVN32/8=
+github.com/tommzn/go-secrets v1.0.2 h1:+oDkPga3IbHxfQ+A9v03CsH4P5nU0lIwB8sBUodYbYo=
+github.com/tommzn/go-secrets v1.0.2/go.mod h1:ZCiO/36WGUEgk5K7+S3U/JKIp4ghe5OA2fkckVN32/8=
 github.com/tommzn/go-utils v1.0.1 h1:GSPyGFBcucd17ZxRRyFYTLcgHo+p+SZoWfHKzt32kJg=
 github.com/tommzn/go-utils v1.0.1/go.mod h1:TaQQLOtzHNmRx+/WUHgyNYvsqUX1N0JJEePC8Pye0Ow=
 github.com/tommzn/hdb-datasource-core v1.2.0 h1:WYnY5FhPGvnFlZg7ngeIaBKOoKQS8gZb+RcPUxxASOU=
 github.com/tommzn/hdb-datasource-core v1.2.0/go.mod h1:K+7tS/YITSjgLxNOsGpVW3DB7WS1rJK2u6vW6taICeQ=
+github.com/tommzn/hdb-datasource-core v1.2.1 h1:Mo21VCaBCvcic9WqfaWL0Ht0MtFpNChjlZOmocCDMKs=
+github.com/tommzn/hdb-datasource-core v1.2.1/go.mod h1:K+7tS/YITSjgLxNOsGpVW3DB7WS1rJK2u6vW6taICeQ=
 github.com/tommzn/hdb-events-go v1.0.6 h1:rBOw8ZgIlOpR9q7KrQQw3qJwbGgdq6wBQMFQZjYv8CQ=
 github.com/tommzn/hdb-events-go v1.0.6/go.mod h1:Pi0wRugUxNO81wqM4lFoie1C6oE8zUbq4h4TjSgvBi4=
 github.com/tommzn/hdb-events-go v1.0.8 h1:v1j1+a5+J+Wd8QZIfqvquSPiyGX1AMPIA7hwFwoul7o=
@@ -569,6 +577,8 @@ golang.org/x/sys v0.0.0-20210806184541-e5e7981a1069/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20211013075003-97ac67df715c h1:taxlMj0D/1sOAuv/CbSD+MMDof2vbyPTqz5FNYKpXt8=
 golang.org/x/sys v0.0.0-20211013075003-97ac67df715c/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20211106132015-ebca88c72f68 h1:Ywe/f3fNleF8I6F6qv3MeFoSZ6CTf2zBMMa/7qVML8M=
+golang.org/x/sys v0.0.0-20211106132015-ebca88c72f68/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
