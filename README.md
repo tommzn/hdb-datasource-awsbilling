@@ -6,3 +6,6 @@
 
 # HomeDashboard AWS Billing DataSource
 Receives cloud watch event for new billing report put on S3 and calculates current costs for AWS based on this report.
+
+# Links
+- [HomeDashboard Documentation](https://github.com/tommzn/hdb-docs/wiki)
