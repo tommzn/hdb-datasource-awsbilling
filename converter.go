@@ -21,12 +21,12 @@ List of relevat columns in billing report
 
 */
 
-const COLUMN_BILLING_PERIOD = 6
-const COLUMN_LINEITEMTYPE = 9
-const COLUMN_PRODUCTCODE = 12
-const COLUMN_CURRENCYCODE = 19
-const COLUMN_COSTS = 23
-const COLUMN_REGION = 62
+const COLUMN_BILLING_PERIOD = 7
+const COLUMN_LINEITEMTYPE = 10
+const COLUMN_PRODUCTCODE = 13
+const COLUMN_CURRENCYCODE = 20
+const COLUMN_COSTS = 24
+const COLUMN_REGION = 63
 
 // toBillingItems converts given content into billing items.
 func toBillingItems(billingReportLines []string) ([]billingItem, error) {
