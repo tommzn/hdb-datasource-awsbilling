@@ -28,6 +28,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: lambda/
+      - run:
+          name: Show Content
+          command: ls -al
       - aws-ecr/build-and-push-image:
           repo: $AWS_ECR_REPOSITORY
           tag: "${CIRCLE_SHA1},latest"
@@ -38,6 +41,7 @@ jobs:
     steps:
       - run: 
           command: echo 'Lambd Function Update'
+          #command: aws lambda update-function-code --region $AWS_REGION --function-name $AWS_LAMBDA_FUNCTION --image-uri ${ECR_REGISTRY}${ECR_IMAGE}
 
 workflows:
   version: 2
