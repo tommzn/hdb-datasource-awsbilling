@@ -25,12 +25,14 @@ jobs:
   ecr-build-and-deploy:
     executor: aws-ecr/default
     steps:
+      - checkout
       - attach_workspace:
           at: lambda/
       - aws-ecr/build-and-push-image:
           repo: $AWS_ECR_REPOSITORY
           tag: "${CIRCLE_SHA1},latest"
           path: lambda
+          checkout: false
   lambda-func-update:
     executor: aws-cli/default
     steps:
