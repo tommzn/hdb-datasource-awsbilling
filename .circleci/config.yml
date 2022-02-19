@@ -2,11 +2,6 @@ version: 2.1
 
 jobs:
   ecr-build:
-    filters:
-      tags:
-        only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
-      branches:
-        ignore: /.*/
     docker:
       - image: circleci/golang:1.15.8
     steps:
@@ -19,3 +14,9 @@ workflows:
   aws-lambda-deploy:
     jobs:
       - ecr-build
+          filters:
+            tags:
+              only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
+            branches:
+              ignore: /.*/
+    
