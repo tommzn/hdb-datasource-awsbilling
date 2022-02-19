@@ -22,6 +22,7 @@ jobs:
           paths:
             - lambda/build_artifact_bin
   ecr-build-and-deploy:
+    executor: aws-ecr/default
     attach_workspace:
       at: lambda/
     steps:
