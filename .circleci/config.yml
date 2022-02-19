@@ -7,22 +7,22 @@ workflows:
   aws-lambda-deploy:
     jobs:
       - go-build:
-        docker:
-          - image: circleci/golang:1.17
-        steps:
-          - checkout:
-          - run:
-              name: Run tests
-              command: go test -v  -covermode=count ./...
-              working_directory: lambda
-          - run:
-              name: Build Binary
-              command: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -v -o build_artifact_bin
-              working_directory: lambda
-          - persist_to_workspace:
-              root: .
-              paths:
-                - lambda/build_artifact_bin
+          docker:
+            - image: circleci/golang:1.17
+          steps:
+            - checkout:
+            - run:
+                name: Run tests
+                command: go test -v  -covermode=count ./...
+                working_directory: lambda
+            - run:
+                name: Build Binary
+                command: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -v -o build_artifact_bin
+                working_directory: lambda
+            - persist_to_workspace:
+                root: .
+                paths:
+                  - lambda/build_artifact_bin
       - aws-ecr/build-and-push-image:
           attach_workspace:
             at: lambda/
