@@ -1,21 +1,16 @@
 version: 2.1
 
-jobs:
-  ecr-build:
-    docker:
-      - image: circleci/golang:1.15.8
-    steps:
-      - checkout
-      - run:
-          name: Display Env
-          command: env
-  
+orbs:
+  aws-ecr: circleci/aws-ecr@7.3.0
+
 workflows:
   aws-lambda-deploy:
     jobs:
-      - ecr-build:
+      - aws-ecr/build_and_push_image:
           filters:
             branches:
               ignore: /.*/
             tags:
               only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
+          tag: "${CIRCLE_SHA1}",latest   
+          path: lambda
