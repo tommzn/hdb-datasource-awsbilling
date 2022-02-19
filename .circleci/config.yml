@@ -4,7 +4,7 @@ orbs:
   aws-ecr: circleci/aws-ecr@7.3.0
 
 workflows:
-  aws-lambda-deploy:
+  build_and_push_image:
     jobs:
       - aws-ecr/build_and_push_image:
           filters:
