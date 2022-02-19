@@ -12,5 +12,6 @@ workflows:
               ignore: /.*/
             tags:
               only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
+          repo: $AWS_ECR_REPOSITORY
           tag: "${CIRCLE_SHA1},latest"
           path: lambda
