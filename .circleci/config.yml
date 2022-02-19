@@ -32,7 +32,8 @@ jobs:
           path: lambda
   lambda-func-update:
     steps:
-      - run: echo 'Lambd Function Update'
+      - run: 
+          command: echo 'Lambd Function Update'
 
 workflows:
   version: 2
