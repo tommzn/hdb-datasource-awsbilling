@@ -3,36 +3,50 @@ version: 2.1
 orbs:
   aws-ecr: circleci/aws-ecr@7.3.0
 
+jobs:
+  go-build:
+    docker:
+      - image: circleci/golang:1.17
+    steps:
+      - checkout:
+      - run:
+          name: Run tests
+          command: go test -v  -covermode=count ./...
+          working_directory: lambda
+      - run:
+          name: Build Binary
+          command: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -v -o build_artifact_bin
+          working_directory: lambda
+      - persist_to_workspace:
+          root: .
+          paths:
+            - lambda/build_artifact_bin
+  ecr-build-and-deploy:
+    attach_workspace:
+      at: lambda/
+    steps:
+      - aws-ecr/build-and-push-image:
+          repo: $AWS_ECR_REPOSITORY
+          tag: "${CIRCLE_SHA1},latest"
+          path: lambda
+  lambda-func-update:
+    steps:
+      - run: echo "Lambd Function Update"
+
 workflows:
+  version: 2
   aws-lambda-deploy:
     jobs:
-      - go-build:
-          docker:
-            - image: circleci/golang:1.17
-          steps:
-            - checkout:
-            - run:
-                name: Run tests
-                command: go test -v  -covermode=count ./...
-                working_directory: lambda
-            - run:
-                name: Build Binary
-                command: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -v -o build_artifact_bin
-                working_directory: lambda
-            - persist_to_workspace:
-                root: .
-                paths:
-                  - lambda/build_artifact_bin
-      - aws-ecr/build-and-push-image:
-          attach_workspace:
-            at: lambda/
+      - go-build
           filters:
             branches:
               ignore: /.*/
             tags:
               only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
+      - ecr-build-and-deploy:
           requires:
             - go-build
-          repo: $AWS_ECR_REPOSITORY
-          tag: "${CIRCLE_SHA1},latest"
-          path: lambda
+      - lambda-func-update:
+          requires:
+            - ecr-build-and-deploy
+          
