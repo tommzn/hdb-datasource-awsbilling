@@ -4,7 +4,8 @@ jobs:
   build:
     filters:
       tags:
-        only: /^lambda\/v[0-9]+(\.[0-9]+)*$/
+        # /^lambda\/v[0-9]+(\.[0-9]+)*$/
+        only: /^lambda.*/ 
     working_directory: ~/repo
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
