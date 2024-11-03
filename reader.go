@@ -36,7 +36,7 @@ func isZipped(objectKey string) bool {
 	return strings.HasSuffix(objectKey, "gz")
 }
 
-// unzip unzips
+// unzip unzip
 func unzip(zipedData []byte) ([]byte, error) {
 
 	b := bytes.NewBuffer(zipedData)
